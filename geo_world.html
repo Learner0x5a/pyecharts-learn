@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+
+</head>
+<body>
+    <div id="ea92e874670d4a2d9f85b374c93e6647" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_ea92e874670d4a2d9f85b374c93e6647 = echarts.init(
+            document.getElementById('ea92e874670d4a2d9f85b374c93e6647'), 'white', {renderer: 'canvas'});
+        var option_ea92e874670d4a2d9f85b374c93e6647 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#82318E"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "French",
+                    "value": [
+                        2.213749,
+                        46.227638,
+                        10
+                    ]
+                },
+                {
+                    "name": "Canada",
+                    "value": [
+                        -106.346771,
+                        56.130366,
+                        3
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.819836,
+                        1.352083,
+                        1
+                    ]
+                },
+                {
+                    "name": "China",
+                    "value": [
+                        104.195397,
+                        35.86166,
+                        6
+                    ]
+                },
+                {
+                    "name": "South Africa",
+                    "value": [
+                        22.937506,
+                        -30.559482,
+                        1
+                    ]
+                },
+                {
+                    "name": "India",
+                    "value": [
+                        78.96288,
+                        20.593684,
+                        2
+                    ]
+                },
+                {
+                    "name": "Israel",
+                    "value": [
+                        34.851612,
+                        31.046051,
+                        4
+                    ]
+                },
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.712891,
+                        37.09024,
+                        12
+                    ]
+                },
+                {
+                    "name": "Japan",
+                    "value": [
+                        138.252924,
+                        36.204824,
+                        4
+                    ]
+                },
+                {
+                    "name": "South Korea",
+                    "value": [
+                        127.766922,
+                        35.907757,
+                        1
+                    ]
+                },
+                {
+                    "name": "Australia",
+                    "value": [
+                        133.775136,
+                        -25.274398,
+                        2
+                    ]
+                },
+                {
+                    "name": "Malaysia",
+                    "value": [
+                        101.975766,
+                        4.210484,
+                        1
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 12,
+        "inRange": {
+            "symbolSize": [
+                20,
+                50
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "world",
+        "roam": true,
+        "emphasis": {}
+    }
+};
+        chart_ea92e874670d4a2d9f85b374c93e6647.setOption(option_ea92e874670d4a2d9f85b374c93e6647);
+    </script>
+</body>
+</html>
